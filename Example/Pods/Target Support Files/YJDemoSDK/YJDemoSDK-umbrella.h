@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "AFNetWorkUtils.h"
+#import "NetJson.h"
+#import "NSErrorHelper.h"
+#import "Urls.h"
 #import "YJDemoSDK.h"
 
 FOUNDATION_EXPORT double YJDemoSDKVersionNumber;

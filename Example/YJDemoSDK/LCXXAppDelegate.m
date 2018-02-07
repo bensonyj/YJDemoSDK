@@ -7,12 +7,21 @@
 //
 
 #import "LCXXAppDelegate.h"
+#import <YJDemoSDK/YJDemoSDK.h>
+#import <YJDemoSDK/AFNetWorkUtils.h>
+#import "AFNetworkReachabilityManager.h"
+#import "ReactiveCocoa.h"
 
 @implementation LCXXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[AFNetWorkUtils racPOSTWthURL:@"http://bm.voicegu.com/ucscmanage/enterprise/login.action" params:nil] subscribeNext:^(id x) {
+        
+    } error:^(NSError *error) {
+        
+    }];
     return YES;
 }
 
