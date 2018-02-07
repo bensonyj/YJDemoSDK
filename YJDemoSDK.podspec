@@ -30,13 +30,21 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YJDemoSDK/Classes/**/*'
+  s.source_files = 'YJDemoSDK/Classes/*'
   
   # s.resource_bundles = {
   #   'YJDemoSDK' => ['YJDemoSDK/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'YJDemoSDK/Classes/*.h'
+  s.frameworks = 'UIKit', 'SystemConfiguration', 'Security', 'MobileCoreServices', 'Foundation', 'CoreFoundation'
+  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'ReactiveCocoa', '~> 2.5'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'SDWebImage'
+  s.dependency 'Masonry'
+  s.dependency 'MJExtension'
+  s.dependency 'MJRefresh'
+  s.dependency 'IQKeyboardManager'
+
 end
